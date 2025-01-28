@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1cfd2066.css",
+    "main.js": "/static/js/main.e8953a8c.js",
+    "static/js/488.21a3b654.chunk.js": "/static/js/488.21a3b654.chunk.js",
+    "static/media/rinku_pic.jpg": "/static/media/rinku_pic.1f8ec3e62e8daaa4ac67.jpg",
+    "static/media/gold-golden-r-wing-wings-alphabet-letter-logo-icon-with-classy-design-for-company-and-business-vector.jpg": "/static/media/gold-golden-r-wing-wings-alphabet-letter-logo-icon-with-classy-design-for-company-and-business-vector.b1254c0f5fd337f95fc7.jpg",
+    "index.html": "/index.html",
+    "main.1cfd2066.css.map": "/static/css/main.1cfd2066.css.map",
+    "main.e8953a8c.js.map": "/static/js/main.e8953a8c.js.map",
+    "488.21a3b654.chunk.js.map": "/static/js/488.21a3b654.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cfd2066.css",
+    "static/js/main.e8953a8c.js"
+  ]
+}
