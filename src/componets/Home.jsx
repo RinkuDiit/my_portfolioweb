@@ -1,16 +1,14 @@
 import React, { useEffect } from 'react'
 
 function Home() {
-  
-  
-   const  downloadcv = () => {
-      alert("downloaded")
-    }
- 
- 
-  
 
-  
+
+
+
+
+
+
+
 
   return (
     <div>
@@ -21,9 +19,9 @@ function Home() {
           <h6>React.js Front-End Developer. Proficient in HTML, CSS, JavaScript, and React.js, with hands-on experience through academic projects and personal practice. Eager to contribute to dynamic teams, build intuitive user interfaces.</h6>
           <br />
           <div>
-            <a href="file:///D:/RINKU_KUMAR_cv2.pdf" download="myfile.pdf">
-            <button type='button' className='mycv my_buttons'>Download CV <i class="fa fa-cloud-download" aria-hidden="true"></i> </button></a>
-            <button className='my_buttons my_linkdin'><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+            <a href="https://drive.google.com/file/d/150bblH7mCUo_zZAG9ctkkJsoxoUqhwEz/view?usp=drive_link" download="myresume.pdf">
+              <button type='button' className='mycv my_buttons'>Download CV <i class="fa fa-cloud-download" aria-hidden="true"></i> </button></a>
+            <a href="https://www.linkedin.com/in/rinku-kumar-b803ba2b8/"><button className='my_buttons my_linkdin'><i class="fa fa-linkedin" aria-hidden="true"></i></button></a>
             <button className='my_buttons my_linkdin'><i class="fa fa-github" aria-hidden="true"></i></button>
 
 
