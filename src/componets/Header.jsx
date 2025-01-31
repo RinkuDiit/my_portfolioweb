@@ -65,7 +65,7 @@ function Header() {
         </div>
         <div className="dropdown_manu" style={{display:display}}>
         <ul>
-        <img src={require('../img/Screenshot_2025-01-31_070119-removebg-preview.png')} width={100} />
+        <img src={require('../../src/img/Screenshot_2025-01-31_070119-removebg-preview.png')} width={100} />
 
             <li>Home</li>
             <li>About</li>
