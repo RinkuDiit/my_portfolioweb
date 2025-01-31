@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Aboutme from '../componets/Aboutme'
+// import Aboutme from '../componets/Aboutme'
 
 function Home() {
 
