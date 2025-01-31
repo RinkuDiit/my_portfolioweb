@@ -51,11 +51,11 @@ function Header() {
         </div>
         <div className="header_menu">
           <ul>
-            <Link to="/"></Link><li><>Home</></li>
-            <li><>About</></li>
-            <li><>Contect</></li>
-            <li>My CV</li>
-            <li>Projects</li>
+            <Link to="/"></Link><li><>HOME</></li>
+            <li><>ABOUT</></li>
+            <li><>CONTACT</></li>
+            <li>RESUME</li>
+            <li>PROJECTS</li>
 
           </ul>
         </div>

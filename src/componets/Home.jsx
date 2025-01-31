@@ -4,13 +4,6 @@ import Aboutme from '../componets/Aboutme'
 function Home() {
 
 
-
-
-
-
-
-
-
   return (
     <div>
       <div className="my_info"> 
