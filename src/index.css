@@ -35,6 +35,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  display: none;
 }
 
 .logo img {
@@ -44,6 +45,7 @@
 
 .header_menu ul {
   list-style: none;
+  display: block;
   
 }
 
@@ -141,4 +143,102 @@
   background-color: #8750f7;
   transition: 0.2s;
   color:#fff !important;
+}
+
+/* ---------------------About ------------------------ */
+
+
+.aboutme{
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  background-color: black;
+  color: white;
+}
+.eduLogo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.eduLogo img{
+  width: 100%;
+  height: 100%;
+}
+
+
+@media  (max-width: 768px) {
+
+  .header_logo{
+    background-color: #00040a !important;
+  }
+
+  .logo{
+    width: 40%;
+
+  }
+  .header_menu{
+    width: 60%;
+  }
+  .header_menu ul {
+    list-style: none;
+    display: none;
+    
+  }
+
+  .nav_icon{
+    display: flex !important;
+    display: block;
+    font-size: 20px;
+    /* position: relative; */
+  }
+  .dropdown_manu{
+    display: none;
+    position: absolute;
+    background-color: #00040a;
+    padding: 12px;
+    width: 50%;
+  }
+  .dropdown_manu li{
+    list-style-type: none;
+    margin-top: 10px;
+  }
+  .nav_icon:hover .dropdown_manu{
+    display: block;
+  }
+  
+
+  
+ 
+
+  .my_info {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    padding-top: 100px;
+  }
+
+  .i_am {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .i_am h1,
+  .i_am h2 {
+    font-size: 40px;
+  }
+
+  .my_img {
+    width: 100%;
+  }
+
+  .imgOfRinku {
+    width: 300px;
+    height: 400px;
+  }
+
+  .mycv {
+    width: 160px;
+    height: 50px;
+  }
 }
