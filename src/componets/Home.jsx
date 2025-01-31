@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Aboutme from './Aboutme'
+import Aboutme from '../componets/Aboutme'
 
 function Home() {
 
@@ -13,9 +13,9 @@ function Home() {
 
   return (
     <div>
-      <div className="my_info">
+      <div className="my_info"> 
         <div className="i_am">
-          <h2 className='fw-bold '>Hi, I'm Rinku Kumar 👋 </h2>
+          <h2 className='fw-bold '>Hi, I'm Rinku Kumar  </h2>
           <h1 className='fw-bold i_am_h1_color'> React.js  <br />  Developer.</h1>
           <h6>Passionate about building interactive UIs.</h6>
           <br />

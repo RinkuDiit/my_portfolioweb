@@ -47,7 +47,7 @@ function Header() {
     <div>
       <div className="header_logo" style={{ backgroundColor: headercolor }}>
         <div className="logo">
-          <img src={require('../img/gold-golden-r-wing-wings-alphabet-letter-logo-icon-with-classy-design-for-company-and-business-vector.jpg')} />
+          <img src={require('../img/Screenshot_2025-01-31_070119-removebg-preview.png')} />
         </div>
         <div className="header_menu">
           <ul>
@@ -65,7 +65,7 @@ function Header() {
         </div>
         <div className="dropdown_manu" style={{display:display}}>
         <ul>
-        <img src={require('../img/gold-golden-r-wing-wings-alphabet-letter-logo-icon-with-classy-design-for-company-and-business-vector.jpg')} width={100} />
+        <img src={require('../img/Screenshot_2025-01-31_070119-removebg-preview.png')} width={100} />
 
             <li>Home</li>
             <li>About</li>

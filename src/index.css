@@ -21,6 +21,7 @@
 .logo {
   width: 15%;
   height: 100%;
+  text-align: center;
 
 }
 
@@ -39,8 +40,8 @@
 }
 
 .logo img {
-  width: 100%;
-  height: 100%;
+  width: 110px;
+  /* height: 100%; */
 }
 
 .header_menu ul {
@@ -53,6 +54,9 @@
  float: left;
  margin:24px 20px;
  font-size: 15px;
+}
+.dropdown_manu{
+  display: none;
 }
 
 /* ------------------- Home page CSS --------------------- */
@@ -154,10 +158,11 @@
   padding: 50px;
   background-color: black;
   color: white;
+  text-align: center;
 }
 .eduLogo{
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 .eduLogo img{
@@ -182,7 +187,7 @@
   .header_menu ul {
     list-style: none;
     display: none;
-    
+    padding:0;
   }
 
   .nav_icon{
@@ -195,10 +200,14 @@
     display: none;
     position: absolute;
     background-color: #00040a;
-    padding: 12px;
+    padding: 5px;
     width: 50%;
+    text-align: center;
   }
-  .dropdown_manu li{
+  .dropdown_manu ul{
+    padding: 0;
+  }
+   .dropdown_manu li{
     list-style-type: none;
     margin-top: 10px;
   }
