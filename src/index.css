@@ -1,7 +1,7 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: Sora,sans-serif;
+  font-family: Sora, sans-serif;
 }
 
 
@@ -48,17 +48,17 @@
 .header_menu ul {
   list-style: none;
   display: block;
-  
+
 }
 
 .header_menu ul li {
- float: left;
- margin:24px 20px;
- font-size: 15px;
- position: relative;
+  float: left;
+  margin: 24px 20px;
+  font-size: 15px;
+  position: relative;
 }
 
-.header_menu ul li:hover{
+.header_menu ul li:hover {
   color: #8750f7;
   cursor: pointer;
 }
@@ -67,18 +67,21 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px; /* Distance from text */
+  bottom: -5px;
+  /* Distance from text */
   width: 100%;
   height: 2px;
-  background-color: #8750f7; /* Line color */
+  background-color: #8750f7;
+  /* Line color */
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
+
 .header_menu ul li:hover::after {
   transform: scaleX(1);
 }
 
-.dropdown_manu{
+.dropdown_manu {
   display: none;
 }
 
@@ -87,7 +90,7 @@
 .my_info {
   width: 100%;
   height: 700px;
-  background-image:linear-gradient(90deg,#0e051e,#0e051e,#0e051e,#42146b);
+  background-image: linear-gradient(90deg, #0e051e, #0e051e, #0e051e, #42146b);
   display: flex;
 }
 
@@ -99,13 +102,16 @@
   justify-content: center;
   font-weight: bold;
   color: white;
-  padding-left: 40px;
+  padding: 10px 60px;
 }
-.i_am h1,h2{
+
+.i_am h1,
+h2 {
   font-size: 60px;
 }
-.i_am_h1_color{
-  background: linear-gradient(90deg,#8750f7,#fff);
+
+.i_am_h1_color {
+  background: linear-gradient(90deg, #8750f7, #fff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -113,12 +119,13 @@
 
 .my_img {
   width: 50%;
-  height: 100% ;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.imgOfRinku{
+
+.imgOfRinku {
   width: 384px;
   height: 528px;
   border-radius: 10px;
@@ -128,125 +135,261 @@
   transition: 0.3s;
 
 }
-.imgOfRinku:hover{
+
+.imgOfRinku:hover {
   transform: rotate(0deg);
   border: solid 3px #8750f7;
   transition: 0.3s;
 
 }
-.imgOfRinku img{
+
+.imgOfRinku img {
   width: 100%;
   height: 100%;
 }
-.mycv{
+
+.mycv {
   width: 200px;
   height: 70px;
-  color:#8750f7 !important;
+  color: #8750f7 !important;
   transition: 0.2s;
 }
 
-.mycv:hover{
+.mycv:hover {
   background-color: #8750f7;
   transition: 0.2s;
-  color:#fff !important;
+  color: #fff !important;
 }
 
-.my_buttons{
+.my_buttons {
   border: 2px solid #8750f7;
   background-color: transparent;
   color: #fff;
   font-weight: 800;
   border-radius: 40px;
 }
-.my_linkdin{
+
+.my_linkdin {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-left: 10px;
   transition: 0.2s;
-  color:#8750f7 !important;
+  color: #8750f7 !important;
 }
-.my_linkdin:hover{
+
+.my_linkdin:hover {
   background-color: #8750f7;
   transition: 0.2s;
-  color:#fff !important;
+  color: #fff !important;
 }
 
 /* ---------------------About ------------------------ */
 
 
-.aboutme{
+.aboutme {
   width: 100%;
   height: auto;
-  padding: 50px;
+  padding: 10px 60px;
   background-color: black;
   color: white;
-  text-align: center;
+  /* text-align: center; */
 }
-.eduLogo{
+
+.eduLogo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-.eduLogo img{
+
+.eduLogo img {
   width: 100%;
   height: 100%;
 }
 
+.about_pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: auto;
+  /* overflow: hidden; */
+  /* border: #8750f7 solid 3px; */
+  position: relative;
+  animation: runcolor 3s infinite linear;
+  /* box-shadow: #8750f7 10px 10px 10px 10px; */
 
-@media  (max-width: 768px) {
+}
+@keyframes runcolor {
+  0%{border: solid 5px #8750f7; }
+  50%{border: solid 5px #fff;}
+  100%{border: solid 5px #8750f7;}
 
-  .header_logo{
+}
+
+/* .about_pic_parant{
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #fff;
+  display: flex;
+
+} */
+/* .about_pic_parant::before{
+  content: '';
+  position: absolute;
+  background-color: #8850f7;
+  height: 208px;
+  width: 208px;
+  left: -7px;
+  bottom: -6px;
+  border-radius: 273px; */
+
+
+.about_pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.what_i_do ul li {
+  list-style-type: none;
+}
+
+/* -------------------------Education ------------------------------ */
+
+.edu_section1 {
+  width: 100%;
+  height: auto;
+  background-color: #42146b;
+  padding: 10px 60px;
+
+
+}
+
+/* -------------------------Contact ------------------------------ */
+
+.contact_section1 {
+  width: 100%;
+  height: auto;
+  background-color: #0e051e;
+  padding: 10px 60px;
+  color: white;
+
+}
+
+.contact_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_section1 input {
+  background-color: transparent;
+  border: #8750f7 1px solid;
+  margin: 10px;
+  width: 300px;
+  padding: 3px;
+  color: white;
+  outline: none;
+}
+
+.contact_form textarea {
+  background-color: transparent;
+  border: #8750f7 1px solid;
+  margin: 10px;
+  width: 97%;
+  height: 100px;
+  padding: 3px;
+  color: white;
+  outline: none;
+}
+
+.contact_form button {
+  background-color: transparent;
+  border: 1px solid #8750f7;
+  margin-left: 10px;
+  color: #fff;
+  padding: 3px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #8750f7;
+  transition: 0.3s;
+  animation: colorChange  3s infinite linear;
+
+}
+@keyframes colorChange  {
+  0%{background-color: #8750f7;}
+  50%{background-color: #42146b;}
+  100%{background-color: #8750f7;}
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .header_logo {
     background-color: #00040a !important;
   }
 
-  .logo{
+  .logo {
     width: 40%;
 
   }
-  .header_menu{
+
+  .header_menu {
     width: 60%;
   }
+
   .header_menu ul {
     list-style: none;
     display: none;
-    padding:0;
+    padding: 0;
   }
 
-  .nav_icon{
+  .nav_icon {
     display: flex !important;
     display: block;
     font-size: 20px;
     /* position: relative; */
   }
-  .dropdown_manu{
+
+  .dropdown_manu {
     display: none;
     position: absolute;
     background-color: #00040a;
     /* padding: 5px; */
-    width: 50%;
+    width: 80%;
     height: 100vh;
     text-align: center;
   }
-  .dropdown_manu ul{
+
+  .dropdown_manu ul {
     padding: 0;
   }
-   .dropdown_manu li{
+
+  .dropdown_manu li {
     list-style-type: none;
-    margin-top: 10px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.578);
+    margin-top: 34px;
   }
-  .dropdown_manu li:hover{
-      color: #8750f7;
+
+  .dropdown_manu li:hover {
+    color: #8750f7;
 
   }
-  .nav_icon:hover .dropdown_manu{
+
+  .nav_icon:hover .dropdown_manu {
     display: block;
   }
-  
 
-  
- 
+
+
+
 
   .my_info {
     flex-direction: column;
@@ -278,5 +421,11 @@
   .mycv {
     width: 160px;
     height: 50px;
+  }
+  .aboutme{
+    padding:10px 16px;
+  }
+  .contact_form textarea{
+    width: 94%;
   }
 }

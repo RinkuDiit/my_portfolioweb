@@ -46,6 +46,7 @@ function Header() {
   return (
     <div>
       <div className="header_logo" style={{ backgroundColor: headercolor }}>
+      
         <div className="logo">
           <img src={require('../img/Screenshot_2025-01-31_070119-removebg-preview.png')} />
         </div>
@@ -72,13 +73,18 @@ function Header() {
             <li>Contact</li>
             <li>My CV</li>
             <li>Projects</li>
-          </ul>
+        </ul> <br /><br />
+        
+        <p>Mob: +91 9983552078</p>
+        <p>E-mail: rr1341570@gmail.com</p>
+
+        
         </div>
 
        
 
       </div>
-    </div>
+      </div>
   )
 }
 

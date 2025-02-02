@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import Aboutme from '../componets/Aboutme'
+import Education from './Education'
+import Contect from './Contect'
 
 function Home() {
 
@@ -28,6 +30,8 @@ function Home() {
         </div>
       </div>
      < Aboutme />
+     <Education />
+     <Contect />
     </div>
   )
 }
