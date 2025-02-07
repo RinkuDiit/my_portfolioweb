@@ -54,9 +54,9 @@ function Header() {
           <ul>
             <Link to="/"></Link><li><>HOME</></li>
             <li><>ABOUT</></li>
-            <li><>CONTACT</></li>
-            <li>RESUME</li>
+            <li>SKILLS</li>
             <li>PROJECTS</li>
+            <li><>CONTACT</></li>
 
           </ul>
         </div>
@@ -71,12 +71,12 @@ function Header() {
             <li>Home</li>
             <li>About</li>
             <li>Contact</li>
-            <li>My CV</li>
+            <li></li>
             <li>Projects</li>
         </ul> <br /><br />
         
-        <p>Mob: +91 9983552078</p>
-        <p>E-mail: rr1341570@gmail.com</p>
+        <a href="tel:+919983552078"><p>Mob: +91 9983552078</p></a>
+        <a href="mailto:rr1341570@gmail.com"><p>E-mail: rr1341570@gmail.com</p></a>
 
         
         </div>

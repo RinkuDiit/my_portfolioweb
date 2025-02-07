@@ -4,7 +4,24 @@ function Education() {
   return (
     <div>
         <div className="edu_section1">
-            Education
+            <h1 style={{textAlign:'center'}}>MY <span style={{ color: '#8750f7' }}>EDUCATION</span></h1>
+            <div className="line"></div>
+            <div className="edu_div">
+              <h3>2023-2024 </h3>
+              <h2>MERN Stack Developer Course</h2>
+              <h6>Diit Educom Alwar (Raj.)</h6>
+            </div>
+             <div className="edu_div">
+              <h3>1020-2023 </h3>
+              <h2>B.com Graduation</h2>
+              <h6>Govt. Commerce College Alwar (Raj.)</h6>
+            </div>
+            <div className="edu_div">
+              <h3>1019-2020 </h3>
+              <h2>12th Commerce</h2>
+              <h6>Govt. Sr. Sec School Govindgarh Alwar (Raj.)</h6>
+            </div>
+
         </div>
     </div>
   )

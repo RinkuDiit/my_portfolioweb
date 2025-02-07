@@ -39,6 +39,8 @@
   display: none;
 }
 
+
+
 .logo img {
   width: 110px;
   /* height: 100%; */
@@ -217,8 +219,12 @@ h2 {
   /* border: #8750f7 solid 3px; */
   position: relative;
   animation: runcolor 3s infinite linear;
-  /* box-shadow: #8750f7 10px 10px 10px 10px; */
+  transition: 0.5s;
 
+}
+.about_pic:hover{
+  transform: scale(1.1) rotate(3deg);
+  transition: 0.5s;
 }
 
 @keyframes runcolor {
@@ -314,10 +320,11 @@ h2 {
   transition: 1s;
 }
 
-.contact_form input:focus{
+.contact_form input:focus {
   transition: 1s;
   border-color: #8750f7;
 }
+
 .contact_form textarea {
   background-color: #00040a;
   border: gray 1px solid;
@@ -332,7 +339,7 @@ h2 {
 
 
 .contact_form button {
-  background-image: linear-gradient(120deg, #fff , #8750f7, #8750f7);
+  background-image: linear-gradient(120deg, #fff, #8750f7, #8750f7);
   border: 1px solid #8750f7;
   margin-left: 10px;
   color: #fff;
@@ -340,12 +347,16 @@ h2 {
   border-radius: 25px;
   transition: background-position 0.5s ease-in-out, color 0.3s ease-in-out;
   background-size: 200% auto;
-  /* Allows smoother transition */
+}
+button{
+  transition: 0.5s;
 }
 
 button:hover {
   background-position: right center;
   background-image: linear-gradient(120deg, #8750f7, #8750f7, #fff);
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 /* @keyframes colorChange  {
@@ -360,7 +371,7 @@ button:hover {
   justify-content: space-evenly;
   flex-direction: column;
   padding-left: 50px;
-  
+
 }
 
 .contact_info h1 {
@@ -383,11 +394,46 @@ button:hover {
 .flexForcontact p {
   margin-left: 10px;
 }
-.flexForcontact a{
+
+.flexForcontact a {
   color: #fff;
   text-decoration: none;
 }
 
+/* --------------------education---------------------- */
+
+.edu_section1{
+  color: #fff;
+}
+.line{
+  position: absolute;
+  left: 50%;
+  height: 470px;
+  width: 5px;
+  background-color: #8750f7;
+}
+
+.edu_div{
+  width: 50%;
+  height: auto;
+  background-color: #0e051e;
+  padding: 20px;
+  border-radius: 40px;
+  margin-top: 10px;
+  transition:  0.5s ease-in-out;
+  position: relative;
+
+}
+.edu_div:nth-child(even){
+left: 50.5%;
+}
+.edu_div:hover{
+  background-image: linear-gradient(90deg, #8750f7, #0e051e);
+  transition: 0.5s ease-in-out;
+  box-shadow: 4px 4px 5px 5px #0e051e;
+  /* transform: rotate(3deg); */
+  transform: scale(1.1) rotate(3deg);
+}
 
 @media (max-width: 768px) {
 
@@ -507,7 +553,26 @@ button:hover {
     margin-top: 20px;
     padding-left: 10px;
   }
-  .i_am_h1_color{
+
+  .i_am_h1_color {
     font-size: 40px;
+  }
+  .dropdown_manu a{
+    color: white !important;
+    text-decoration: none !important;
+  }
+  .edu_section1{
+    padding: 10px 10px;
+  }
+  .line{
+    left: 10px;
+  }
+  .edu_div{
+    width: 98%;
+    left: 10px;
+    height: auto;
+  }
+  .edu_div:nth-child(even){
+    left: 10px;
   }
 }
