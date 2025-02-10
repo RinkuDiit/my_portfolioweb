@@ -222,7 +222,8 @@ h2 {
   transition: 0.5s;
 
 }
-.about_pic:hover{
+
+.about_pic:hover {
   transform: scale(1.1) rotate(3deg);
   transition: 0.5s;
 }
@@ -318,6 +319,7 @@ h2 {
   outline: none;
   border-radius: 5px;
   transition: 1s;
+  width: 97%;
 }
 
 .contact_form input:focus {
@@ -348,7 +350,8 @@ h2 {
   transition: background-position 0.5s ease-in-out, color 0.3s ease-in-out;
   background-size: 200% auto;
 }
-button{
+
+button {
   transition: 0.5s;
 }
 
@@ -402,10 +405,11 @@ button:hover {
 
 /* --------------------education---------------------- */
 
-.edu_section1{
+.edu_section1 {
   color: #fff;
 }
-.line{
+
+.line {
   position: absolute;
   left: 50%;
   height: 470px;
@@ -413,27 +417,90 @@ button:hover {
   background-color: #8750f7;
 }
 
-.edu_div{
+.edu_div {
   width: 50%;
   height: auto;
   background-color: #0e051e;
   padding: 20px;
   border-radius: 40px;
   margin-top: 10px;
-  transition:  0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   position: relative;
 
 }
-.edu_div:nth-child(even){
-left: 50.5%;
+
+.edu_div:nth-child(even) {
+  left: 50.5%;
 }
-.edu_div:hover{
+
+.edu_div:hover {
   background-image: linear-gradient(90deg, #8750f7, #0e051e);
   transition: 0.5s ease-in-out;
   box-shadow: 4px 4px 5px 5px #0e051e;
   /* transform: rotate(3deg); */
   transform: scale(1.1) rotate(3deg);
 }
+
+
+/* -----------------------------skill--------------------------------------- */
+
+.skillpage {
+  background-color: #0e051e;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 60px;
+}
+
+.skillbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+
+}
+
+.skill_png {
+  width: 200px;
+  height: 200px;
+  /* margin-left: 10px; */
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  /* background-image:conic-gradient(#8750f7 88%,rgba(0, 0, 255, 0.247) 12%); */
+  transition: background 1s ease-in-out; 
+  margin-top: 10px;
+
+}
+.skill_png::before{
+  content: '';
+  width: 185px;
+  height: 185px;
+  background-color: #0e051e;
+  position: absolute;
+  border-radius: 50%;
+}
+.skill_img {
+  width: 60px;
+  z-index: 999;
+}
+
+.skillbar h3 {
+  z-index: 999;
+  margin-top: 10px;
+  color: #8750f7;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
 
 @media (max-width: 768px) {
 
@@ -557,22 +624,40 @@ left: 50.5%;
   .i_am_h1_color {
     font-size: 40px;
   }
-  .dropdown_manu a{
+
+  .dropdown_manu a {
     color: white !important;
     text-decoration: none !important;
   }
-  .edu_section1{
+
+  .edu_section1 {
     padding: 10px 10px;
   }
-  .line{
+
+  .line {
     left: 10px;
   }
-  .edu_div{
+
+  .edu_div {
     width: 98%;
     left: 10px;
     height: auto;
   }
-  .edu_div:nth-child(even){
+
+  .edu_div:nth-child(even) {
     left: 10px;
   }
+
+  .skillpage{
+    padding: 10px 10px;
+  }
+  
+  .skillbar{
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+  }
+ 
+
+
 }
