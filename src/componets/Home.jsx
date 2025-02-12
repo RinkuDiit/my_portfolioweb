@@ -23,6 +23,7 @@ function Home() {
 
   return (
     <div>
+      <section id='home'></section>
       <div className="my_info"> 
         <div className="i_am">
           <h2 className='fw-bold ' data-aos="fade-up">Hi, I'm Rinku Kumar  </h2>
@@ -50,9 +51,7 @@ function Home() {
      <Skill/>
      <Projects />
      <Contect />
-     <div className="scroll_0">
-     <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-     </div>
+    
     </div>
   )
 }

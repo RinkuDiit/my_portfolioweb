@@ -86,6 +86,7 @@ function Skill() {
 
     return (
         <div>
+            <section id='skills'>
             <div className="skillpage">
                 <h1 style={{ textAlign: 'center', width: '100%' }}>My <span style={{ color: '#8750f7' }}>Skill</span></h1>
                 <div className="skillbar">
@@ -125,7 +126,7 @@ function Skill() {
                 </div>
 
             </div>
-
+            </section>
         </div>
     )
 }

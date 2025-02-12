@@ -8,11 +8,11 @@ function Aboutme() {
         once: false, // एक बार चलने के बाद दुबारा ट्रिगर न हो
       });
     }, []);
-    console.log(window.scrollX)
 
     
   return (
     <div>
+      <section id="about">
       <div className="aboutme">
         <h1 style={{textAlign:'center'}}>About <span style={{ color: '#8750f7' }}>Me</span></h1>
         <div className="about_pic_parant" data-aos="zoom-in">
@@ -32,7 +32,7 @@ function Aboutme() {
         </ul>
         </div>
       </div>
-
+      </section>
     </div>
   )
 }

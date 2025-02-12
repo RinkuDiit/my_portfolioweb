@@ -11,6 +11,7 @@ function Education() {
         }, []);
   return (
     <div>
+      <section id='education'>
         <div className="edu_section1">
             <h1 style={{textAlign:'center'}}>My <span style={{ color: '#8750f7' }}>Education</span></h1>
             <div className="line"></div>
@@ -31,6 +32,7 @@ function Education() {
             </div>
 
         </div>
+        </section>
     </div>
   )
 }

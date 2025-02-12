@@ -56,6 +56,7 @@ function Projects() {
 
     return (
         <div>
+            <section id='projects'></section>
             <div className="myprojects">
                 <h1 style={{ textAlign: 'center', width: '100%' }}>My  <span style={{ color: '#8750f7' }}>Projects</span></h1>
                 {myprojects.map((project, index) => (
