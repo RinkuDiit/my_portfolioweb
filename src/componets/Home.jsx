@@ -3,6 +3,7 @@ import Aboutme from '../componets/Aboutme'
 import Education from './Education'
 import Contect from './Contect'
 import Skill from './Skill'
+import Projects from './Projects'
 
 
 function Home() {
@@ -34,6 +35,7 @@ function Home() {
      < Aboutme />
      <Education />
      <Skill/>
+     <Projects />
      <Contect />
     </div>
   )
