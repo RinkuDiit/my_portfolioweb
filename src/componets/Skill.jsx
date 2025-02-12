@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import  AOS from 'aos'
 
 function Skill() {
 
@@ -13,6 +14,13 @@ function Skill() {
 
 
     const [start, setStart] = useState(false)
+
+      useEffect(() => {
+            AOS.init({
+              duration: 1000,
+              once: false, 
+            });
+          }, []);
 
     useEffect(()=>{
         setTimeout(() => {
@@ -81,34 +89,34 @@ function Skill() {
             <div className="skillpage">
                 <h1 style={{ textAlign: 'center', width: '100%' }}>My <span style={{ color: '#8750f7' }}>Skill</span></h1>
                 <div className="skillbar">
-                    <div className="skill_png" style={{ backgroundImage: `conic-gradient(#8750f7 ${countReact}%,rgba(0, 0, 255, 0.247) 12%)` }} onMouseEnter={()=>process('react')}>
+                    <div className="skill_png" data-aos='zoom-in' style={{ backgroundImage: `conic-gradient(#8750f7 ${countReact}%,rgba(0, 0, 255, 0.247) 12%)` }} onMouseEnter={()=>process('react')}>
                         <img className='skill_img' src={require('../img/react-original-wordmark-icon-840x1024-vhmauxp6.png')} alt="" />
                         <h3>{countReact}%</h3>
 
                     </div>
-                    <div className="skill_png" style={{ backgroundImage: `conic-gradient(#8750f7 ${counthtml}%,rgba(0, 0, 255, 0.247) 12%)` }} onMouseEnter={()=>process('html')}>
+                    <div className="skill_png"  data-aos='zoom-in' style={{ backgroundImage: `conic-gradient(#8750f7 ${counthtml}%,rgba(0, 0, 255, 0.247) 12%)` }} onMouseEnter={()=>process('html')}>
                         <img className='skill_img' src={require('../img/html.png')} alt="" />
                         <h3>{counthtml}%</h3>
 
                     </div>
-                    <div className="skill_png" style={{ backgroundImage: `conic-gradient(#8750f7 ${countcss}%,rgba(0, 0, 255, 0.247) 12%)` }} onMouseEnter={()=>process('css')}>
+                    <div className="skill_png"  data-aos='zoom-in' style={{ backgroundImage: `conic-gradient(#8750f7 ${countcss}%,rgba(0, 0, 255, 0.247) 12%)` }} onMouseEnter={()=>process('css')}>
                         <img className='skill_img' src={require('../img/free-css3-logo-icon-download-in-svg-png-gif-file-formats--css-wordmark-programming-langugae-language-pack-logos-icons-1175238.webp')} alt="" />
                         <h3>{countcss}%</h3>
 
                     </div>
                 </div>
                 <div className="skillbar">
-                    <div className="skill_png" style={{ backgroundImage: `conic-gradient(#8750f7 ${countjs}%,rgba(0, 0, 255, 0.247) 12%)` }} onMouseEnter={()=>process('js')}>
+                    <div className="skill_png"  data-aos='zoom-in' style={{ backgroundImage: `conic-gradient(#8750f7 ${countjs}%,rgba(0, 0, 255, 0.247) 12%)` }} onMouseEnter={()=>process('js')}>
                         <img className='skill_img' src={require('../img/javascript.png')} alt="" />
                         <h3>{countjs}%</h3>
 
                     </div>
-                    <div className="skill_png" style={{ backgroundImage: `conic-gradient(#8750f7 ${countnode}%,rgba(0, 0, 255, 0.247) 12%)` }} onMouseEnter={()=>process('node')}>
+                    <div className="skill_png"  data-aos='zoom-in' style={{ backgroundImage: `conic-gradient(#8750f7 ${countnode}%,rgba(0, 0, 255, 0.247) 12%)` }} onMouseEnter={()=>process('node')}>
                         <img className='skill_img' src={require('../img/nodejs.png')} alt="" />
                         <h3>{countnode}%</h3>
 
                     </div>
-                    <div className="skill_png" style={{ backgroundImage: `conic-gradient(#8750f7 ${countGithub}%,rgba(0, 0, 255, 0.247) 12%)` }} onMouseEnter={()=>process('github')}>
+                    <div className="skill_png"  data-aos='zoom-in' style={{ backgroundImage: `conic-gradient(#8750f7 ${countGithub}%,rgba(0, 0, 255, 0.247) 12%)` }} onMouseEnter={()=>process('github')}>
                         <img className='skill_img' src={require('../img/github.webp')} alt="" />
                         <h3>{countGithub}%</h3>
 

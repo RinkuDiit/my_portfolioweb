@@ -35,7 +35,28 @@ function Header() {
     }
   }
  
-
+  
+    const scrollwindow = (data)=>{
+      if (data == 'home') {
+        window.scrollTo(0,0)
+      }
+      else if(data == 'about'){
+        window.scrollTo(0,620)
+      }
+      else if(data == 'education'){
+        window.scrollTo(0,1156)
+      }
+      else if(data == 'skills'){
+        window.scrollTo(0,1721)
+      }
+      else if(data == 'projects'){
+        window.scrollTo(0,2320)
+      }
+      else if(data == 'contact'){
+        window.scrollTo(0,3895)
+      }
+    }
+ 
 
 
 
@@ -52,11 +73,12 @@ function Header() {
         </div>
         <div className="header_menu">
           <ul>
-            <Link to="/"></Link><li><>HOME</></li>
-            <li><>ABOUT</></li>
-            <li>SKILLS</li>
-            <li>PROJECTS</li>
-            <li><>CONTACT</></li>
+            <Link to="/"></Link><li onClick={()=>scrollwindow('home')}><>HOME</></li>
+            <li onClick={()=>scrollwindow('about')}><>ABOUT</></li>
+            <li onClick={()=>scrollwindow('education')}><>EDUCATION</></li>
+            <li onClick={()=>scrollwindow('skills')}>SKILLS</li>
+            <li onClick={()=>scrollwindow('projects')}>PROJECTS</li>
+            <li onClick={()=>scrollwindow('contact')}><>CONTACT</></li>
 
           </ul>
         </div>

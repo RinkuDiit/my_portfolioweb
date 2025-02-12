@@ -4,18 +4,31 @@ import Education from './Education'
 import Contect from './Contect'
 import Skill from './Skill'
 import Projects from './Projects'
+import AOS from 'aos';
+
+
 
 
 function Home() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation की स्पीड (मिलीसेकंड में)
+      once: false, // एक बार चलने के बाद दुबारा ट्रिगर न हो
+    });
+  }, []);
+
+  
 
 
   return (
     <div>
       <div className="my_info"> 
         <div className="i_am">
-          <h2 className='fw-bold '>Hi, I'm Rinku Kumar  </h2>
-          <h1 className='fw-bold i_am_h1_color'> React.js  <br />  Developer.</h1>
-          <h6>Passionate about building interactive UIs.</h6>
+          <h2 className='fw-bold ' data-aos="fade-up">Hi, I'm Rinku Kumar  </h2>
+          <h1 className='fw-bold i_am_h1_color' data-aos="fade-up"> React.js  <br />  Developer.</h1>
+          <h6 data-aos="fade-up">Passionate about building interactive UIs.</h6>
+
           <br />
           <div>
             <a href="https://drive.google.com/file/d/150bblH7mCUo_zZAG9ctkkJsoxoUqhwEz/view?usp=drive_link" download="myresume.pdf">
@@ -37,6 +50,9 @@ function Home() {
      <Skill/>
      <Projects />
      <Contect />
+     <div className="scroll_0">
+     <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+     </div>
     </div>
   )
 }

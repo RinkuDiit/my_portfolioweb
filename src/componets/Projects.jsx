@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+
+
 
 function Projects() {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          once: false, 
+        });
+      }, []);
 
     const myprojects = [
         {
@@ -48,8 +58,8 @@ function Projects() {
         <div>
             <div className="myprojects">
                 <h1 style={{ textAlign: 'center', width: '100%' }}>My  <span style={{ color: '#8750f7' }}>Projects</span></h1>
-                {myprojects.map((project) => (
-                    <div className="project">
+                {myprojects.map((project, index) => (
+                    <div className="project" data-aos={index % 2===0 ? "fade-right" : "fade-left"}>
                         <h3><span style={{ color: '#8750f7', fontWeight: 'bold' }}>Project Title :</span> {project.title}</h3>
                         <div className='project_img'><img src={project.img} alt="" /></div>
                         <p><span style={{ color: '#8750f7', fontWeight: 'bold' }}>Description:</span> {project.description}</p>
