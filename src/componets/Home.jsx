@@ -5,6 +5,7 @@ import Contect from './Contect'
 import Skill from './Skill'
 import Projects from './Projects'
 import AOS from 'aos';
+import CursorFollower from './CursorFollower'
 
 
 
@@ -28,7 +29,7 @@ function Home() {
         <div className="i_am">
           <h2 className='fw-bold ' data-aos="fade-up">Hi, I'm Rinku Kumar  </h2>
           <h1 className='fw-bold i_am_h1_color' data-aos="fade-up"> React.js  <br />  Developer.</h1>
-          <h6 data-aos="fade-up">Passionate about building interactive UIs.</h6>
+          <h6 data-aos="fade-up">Passionate about creating interactive UIs.</h6>
 
           <br />
           <div>
@@ -42,15 +43,18 @@ function Home() {
         </div>
         <div className="my_img">
           <div className="imgOfRinku">
-            <img src={require('../img/rinku_pic.jpg')} alt="" />
+            <img src={require('../img/IMG_20231024_170937.jpg')} alt="" />
           </div>
         </div>
+        <div className="cursor"></div>
+
       </div>
       < Aboutme />
       <Education />
       <Skill />
       <Projects />
       <Contect />
+      <CursorFollower />
     </div>
   )
 }

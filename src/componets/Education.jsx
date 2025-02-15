@@ -21,12 +21,12 @@ function Education() {
               <h6>Diit Educom Alwar (Raj.)</h6>
             </div>
              <div className="edu_div" data-aos='fade-left' >
-              <h3>1020-2023 </h3>
+              <h3>2020-2023 </h3>
               <h2>B.com Graduation</h2>
               <h6>Govt. Commerce College Alwar (Raj.)</h6>
             </div>
             <div className="edu_div" data-aos='fade-right'>
-              <h3>1019-2020 </h3>
+              <h3>2019-2020 </h3>
               <h2>12th Commerce</h2>
               <h6>Govt. Sr. Sec School Govindgarh Alwar (Raj.)</h6>
             </div>
