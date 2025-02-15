@@ -15,7 +15,7 @@ const CursorFollower = () => {
   return(
     <>
     <div className="cursor-dot" style={{ left: position.x, top: position.y}} > 
-    </div>;
+    </div>
 
  </>
   )
