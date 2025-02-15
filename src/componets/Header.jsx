@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import ScrollTracker from './ScrollTracker'
 
 
 function Header() {
@@ -41,30 +42,6 @@ function Header() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-
-
-  // const scrollwindow = (data)=>{
-  //   if (data == 'home') {
-  //     window.scrollTo(0,0)
-  //   }
-  //   else if(data == 'about'){
-  //     window.scrollTo(0,620)
-  //   }
-  //   else if(data == 'education'){
-  //     window.scrollTo(0,1156)
-  //   }
-  //   else if(data == 'skills'){
-  //     window.scrollTo(0,1721)
-  //   }
-  //   else if(data == 'projects'){
-  //     window.scrollTo(0,2320)
-  //   }
-  //   else if(data == 'contact'){
-  //     window.scrollTo(0,3895)
-  //   }
-  // }
-
-
 
 
 
@@ -114,9 +91,10 @@ function Header() {
 
 
       </div>
-      <div onClick={()=>scrollwindow('home')} className="scroll_0">
+      {/* <div onClick={()=>scrollwindow('home')} style={{ backgroundImage: `conic-gradient(#8750f7 88%,rgba(0, 0, 255, 0.247) 12%)` }} className="scroll_0">
      <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-     </div>
+     </div> */}
+     <ScrollTracker />
     </div>
   )
 }

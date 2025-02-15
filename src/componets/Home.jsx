@@ -18,13 +18,13 @@ function Home() {
     });
   }, []);
 
-  
+
 
 
   return (
     <div>
       <section id='home'></section>
-      <div className="my_info"> 
+      <div className="my_info">
         <div className="i_am">
           <h2 className='fw-bold ' data-aos="fade-up">Hi, I'm Rinku Kumar  </h2>
           <h1 className='fw-bold i_am_h1_color' data-aos="fade-up"> React.js  <br />  Developer.</h1>
@@ -46,12 +46,11 @@ function Home() {
           </div>
         </div>
       </div>
-     < Aboutme />
-     <Education />
-     <Skill/>
-     <Projects />
-     <Contect />
-    
+      < Aboutme />
+      <Education />
+      <Skill />
+      <Projects />
+      <Contect />
     </div>
   )
 }

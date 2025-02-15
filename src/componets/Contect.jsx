@@ -1,7 +1,9 @@
-import React, { useEffect,useRef } from 'react'
+import React, { useEffect,useRef, useState } from 'react'
 import AOS from 'aos';
+import swal from 'sweetalert';
 function Contect() {
 
+    const [displays, setdisplay] = useState('none')
 
 
 
@@ -14,20 +16,22 @@ function Contect() {
     }, []);
 
     const mobileRef = useRef();
+    const validmob = useRef()
     
 
     const fillmobnum = () => {
-        debugger
         const num = Number(mobileRef.current.value)
          if(isNaN(num)){
-            alert('Please Enter only Numbers');
-            mobileRef.current.value = ''
-
+             setdisplay('block')
+             mobileRef.current.value = ' '
+         }
+         else{
+            setdisplay('none')
          }
     };
 
     const submit_form = () =>{
-        alert('Thanks for Contact')
+        swal("Thanks for Contact us");
     }
 
 
@@ -42,8 +46,9 @@ function Contect() {
                     <h1 className='i_am_h1_color'>Let’s work <br /> together!</h1>
                     <form action="" method="" onSubmit={submit_form}>
                         <input type="text" placeholder='Name' required />
-                        <input type='text' placeholder='Enter Your E-mail' required /><br />
+                        <input type='email' placeholder='Enter Your E-mail' required /><br />
                         <input type="text" placeholder='Mobile Number' onChange={fillmobnum}  ref={mobileRef}  id='num_contact' required />
+                        <label htmlFor="num_contact" id='validmob' style={{display:displays,color:'red',width:'auto', marginLeft:'10px'}}>Please Enter a valied Number</label>
                         <input type="text" placeholder='Subject' /><br />
                         <textarea name="" id="" placeholder='Your Message' required></textarea>
                         <button type='submit'>Send message</button>
