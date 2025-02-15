@@ -7,7 +7,7 @@ function Header() {
 
 
   const [headercolor, setHeadercolor] = useState('#ff000000')
-  const [display, setdisplay] = useState('none')
+  const [displayleft, setdisplayleft] = useState('-100%')
 
 
 
@@ -18,6 +18,8 @@ function Header() {
       } else {
         setHeadercolor('#ff000000');
       }
+      setdisplayleft('-100%')
+
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -28,11 +30,11 @@ function Header() {
   }, [])
 
   const displays = () => {
-    if (display == 'none') {
-      setdisplay('block')
+    if (displayleft == '-100%') {
+      setdisplayleft('0px')
     }
-    else if (display == 'block') {
-      setdisplay('none')
+    else if (displayleft == '0px') {
+      setdisplayleft('-100%')
     }
   }
 
@@ -70,7 +72,7 @@ function Header() {
           <i class="fa fa-bars" onClick={displays} aria-hidden="true"></i>
 
         </div>
-        <div className="dropdown_manu" style={{ display: display }}>
+        <div className="dropdown_manu" style={{ left: displayleft , transition:'0.7s'}}>
           <ul>
             <img src={require('../../src/img/Screenshot_2025-01-31_070119-removebg-preview.png')} width={100} />
 

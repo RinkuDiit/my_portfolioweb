@@ -4,6 +4,10 @@
   font-family: Sora, sans-serif;
 }
 
+.body{
+  background-color: #fff;;
+}
+
 
 .header_logo {
   width: 100%;
@@ -83,7 +87,8 @@
 }
 
 .dropdown_manu {
-  display: none;
+  position: relative;
+  left: -100%;
 }
 
 /* ------------------- Home page CSS --------------------- */
@@ -662,7 +667,6 @@ button:hover {
   }
 
   .dropdown_manu {
-    display: none;
     position: absolute;
     background-color: #00040a;
     /* padding: 5px; */
